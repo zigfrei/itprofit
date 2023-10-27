@@ -1,0 +1,29 @@
+.form__field-textarea {
+  position: relative;
+  z-index: 1;
+  background-color: $main-colors-white;
+  min-width: 300px;
+  min-height: 120px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .form__field-textarea  {
+    min-width: 150px;
+    min-height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .form__field-textarea  {
+    min-width: 200px;
+    min-height: 80px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .form__field-textarea  {
+    min-width: 250px;
+  min-height: 100px;
+  }
+}

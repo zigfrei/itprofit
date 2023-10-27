@@ -1,0 +1,28 @@
+.logo__title {
+  font-weight: 400;
+  font-size: 34px;
+  font-stretch: 70%;
+  letter-spacing: -1.3px;
+  max-width: 560px;
+  color: $main-colors-red;
+  pointer-events: none;
+  font-family: $thirdFont;
+}
+
+@media screen and (max-width: 480px) {
+  .logo__title {
+    max-width: 360px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo__title  {
+    font-size: 28px;
+    max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .logo__title {
+    font-size: 27px;
+  }
+}

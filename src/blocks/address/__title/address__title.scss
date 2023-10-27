@@ -1,0 +1,13 @@
+.address__title {
+  padding-bottom: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  color: $main-colors-dark-blue;
+}
+
+@media screen and (max-width: 767px) {
+  .address__title {
+    padding-top: 10px;
+  }
+}

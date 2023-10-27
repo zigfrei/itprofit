@@ -1,0 +1,13 @@
+.contacts__map {
+overflow: hidden;
+position: relative;
+height: 200px;
+}
+
+.contacts__map iframe {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  bottom: -50%;
+  left: -50%;
+}

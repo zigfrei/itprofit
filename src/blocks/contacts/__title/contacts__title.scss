@@ -1,0 +1,34 @@
+.contacts__title {
+  padding-bottom: 48px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 58px;
+  color: $main-colors-dark-blue;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__title {
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contacts__title {
+    font-size: 32px;
+    line-height: 38px;
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .contacts__title {
+    font-size: 36px;
+    line-height: 46px;
+    padding-bottom: 36px;
+  }
+}

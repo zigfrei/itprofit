@@ -1,0 +1,21 @@
+.services__card-paragraf {
+  margin: 0 16px 16px 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 163%;
+  color: $main-colors-dark-blue;
+}
+
+@media screen and (max-width: 768px) {
+  .services__card-paragraf {
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .services__card-paragraf {
+    font-size: 18px;
+    line-height: 140%;
+  }
+}

@@ -1,0 +1,24 @@
+.services__image {
+  max-width: 460px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 769px) {
+  .services__image {
+    width: 100%;
+    max-width: 720px;
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .services__image  {
+    max-width: 340px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+  .services__image {
+    max-width: 440px;
+  }
+}

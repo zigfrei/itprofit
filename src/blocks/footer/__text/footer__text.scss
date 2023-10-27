@@ -1,0 +1,17 @@
+.footer__text {
+  color: $main-colors-azure;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  max-width: 360px;
+  pointer-events: none;
+  align-self:flex-end;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__text   {
+    align-self:unset;
+    padding-right: 0;
+  }
+}

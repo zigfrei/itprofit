@@ -1,0 +1,25 @@
+.form__placeholder-label {
+  font-size: 18px;
+  line-height: 163%;
+  color: $main-colors-dark-blue;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 767px) {
+  .form__placeholder-label  {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .form__placeholder-label  {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .form__placeholder-label  {
+  font-size: 16px;
+  }
+}

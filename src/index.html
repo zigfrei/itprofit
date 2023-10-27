@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="En">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="icon" href="<%=require('./images/favicon/favicon.ico')%>" />
+    <link
+      rel="icon"
+      href="<%=require('./images/favicon/favicon_svg.svg')%>"
+      type="image/svg+xml"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="<%=require('./images/favicon/apple-icon-180x180.png')%>"
+    /> -->
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6Lft77AoAAAAACRNALdRnt89zCI-JHh9hJFjru8e"></script> -->
+    <title>ITprofit test task</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+      </header>
+      <main class="main">
+        <section class="contacts content-group" id="contacts">
+          <div class="contacts__wrapper">
+            <div class="contacts__column">
+
+              <form
+                name="submit-form"
+                class="contacts__form form"
+                action="#"
+                method="POST"
+                novalidate
+              >
+                <div class="form__field-name">
+                  <div class="form__field" aria-required="true">
+                    <div class="form__placeholder">
+                      <label class="form__placeholder-label">FIRST NAME</label>
+                      <label class="form__placeholder-required">*</label>
+                    </div>
+                    <input
+                      minlength="2"
+                      maxlength="40"
+                      type="text"
+                      id="first_name"
+                      name="first_name"
+                      class="form__field-input"
+                      aria-required="true"
+                      required
+                      aria-invalid="false"
+                    />
+                    <span
+                      class="form__field-error form__field-error_active first_name-error"
+                    ></span>
+                  </div>
+                  <div class="form__field" aria-required="true">
+                    <div class="form__placeholder">
+                      <label class="form__placeholder-label">SECOND NAME</label>
+                      <label class="form__placeholder-required">*</label>
+                    </div>
+                    <input
+                      minlength="2"
+                      maxlength="40"
+                      type="text"
+                      id="second_name"
+                      name="second_name"
+                      class="form__field-input"
+                      aria-required="true"
+                      required
+                      aria-invalid="false"
+                    />
+                    <span
+                      class="form__field-error form__field-error_active second_name-error"
+                    ></span>
+                  </div>
+                </div>
+                <div class="form__field">
+                  <div class="form__placeholder">
+                    <label class="form__placeholder-label">COMPANY</label>
+                  </div>
+                  <input
+                    minlength="2"
+                    maxlength="40"
+                    type="text"
+                    id="company"
+                    name="company"
+                    class="form__field-input"
+                    aria-invalid="false"
+                  />
+                  <span
+                    class="form__field-error form__field-error_active company-error"
+                  ></span>
+                </div>
+                <div class="form__field" aria-required="true">
+                  <div class="form__placeholder">
+                    <label class="form__placeholder-label">EMAIL</label>
+                    <label class="form__placeholder-required">*</label>
+                  </div>
+                  <input
+                    minlength="2"
+                    maxlength="40"
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form__field-input"
+                    aria-required="true"
+                    required
+                    aria-invalid="false"
+                  />
+                  <span
+                    class="form__field-error form__field-error_active email-error"
+                  ></span>
+                </div>
+                <div class="form__field-textarea" aria-required="true">
+                  <div class="form__placeholder">
+                    <label class="form__placeholder-label">MESSAGE</label>
+                    <label class="form__placeholder-required">*</label>
+                  </div>
+                  <textarea
+                    type="text"
+                    id="message"
+                    name="message"
+                    class="form__field-input"
+                    aria-required="true"
+                    required
+                    aria-invalid="false"
+                    placeholder="How we can help?"
+                  ></textarea>
+                  <span
+                    class="form__field-error form__field-error_active message-error"
+                  ></span>
+                </div>
+
+                <button type="submit" class="form__submit-button">
+                  SUBMIT
+                </button>
+                <span id="form-response" class="form__response"></span>
+              </form>
+            </div>
+
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+      </footer>
+    </div>
+  </body>
+</html>

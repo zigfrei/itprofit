@@ -1,0 +1,29 @@
+.service__card {
+display: flex;
+flex-direction: column;
+padding-top: 80px;
+}
+
+.service__card:first-of-type {
+  padding-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .service__card {
+padding: 16px 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .service__card {
+    padding: 24px 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+  .service__card {
+    padding: 48px 48px;
+  }
+}
+
+

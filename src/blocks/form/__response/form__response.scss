@@ -1,0 +1,21 @@
+.form__response {
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .form__response {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form__response {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}

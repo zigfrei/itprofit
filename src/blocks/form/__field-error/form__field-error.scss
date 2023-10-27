@@ -1,0 +1,11 @@
+.form__field-error {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: red;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  top: calc(100% + 7px);
+  transition: 0.3s;
+}

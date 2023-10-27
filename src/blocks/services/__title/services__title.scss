@@ -1,0 +1,21 @@
+.services__title {
+  padding: 0;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  color: $main-colors-dark-blue;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .services__title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .services__title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}

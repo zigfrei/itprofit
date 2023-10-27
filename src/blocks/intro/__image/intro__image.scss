@@ -1,0 +1,24 @@
+.intro__image {
+  max-width: 100%;
+  object-fit: contain;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .intro__image {
+padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .intro__image {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+  .intro__image {
+    padding: 0 48px;
+  }
+}

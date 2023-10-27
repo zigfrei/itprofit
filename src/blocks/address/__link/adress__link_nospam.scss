@@ -1,0 +1,7 @@
+.adress__link_nospam {
+
+}
+
+.adress__link_nospam::before {
+  content: "\0040";    /* Unicode character for @ symbol */
+}
