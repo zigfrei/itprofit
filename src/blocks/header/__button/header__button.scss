@@ -1,64 +1,25 @@
 .header__button {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  cursor: pointer;
-  display: flex;
+  background-color: red;
+  background-size: 22px 22px;
+  background-position: 50% 50%;
+  width: 150px;
   height: 50px;
-  width: 50px;
-  background: $main-colors-dark-blue;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  top: 16px;
-  right: 16px;
-  z-index: 10;
-  transition: border 0.3s ease;
+  padding: 0;
+  background-repeat: no-repeat;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: opacity 1s;
 }
 
-.header__button:active {
-  outline: 2px solid $main-colors-red;
+.header__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
-.header__button::after,
-.header__button::before {
-  content: '';
-  height: 20px;
-  border-left: 1px solid $main-colors-azure;
-  transform: rotate(90deg);
-  margin: -3px;
-  transition: transform 0.3s ease;
-}
-
-.header__button_active::after {
-  transform: rotate(-135deg);
-  border-color: $main-colors-red;
-}
-.header__button_active::before {
-  transform: rotate(-45deg);
-  border-color: $main-colors-red;
-}
-
-.header__button_active {
-  background: $main-colors-azure;
-}
-
-@media screen and (min-width: 767px) {
-  .header__button {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .header__button {
-    top: 8px;
-    right: 8px;
-    height: 30px;
-    width: 30px;
-  }
-  .header__button::after,
-.header__button::before {
-  height: 11px;
-  margin: -2px;
-}
+.header__button:focus {
+  outline: 0;
 }

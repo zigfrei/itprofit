@@ -8,16 +8,21 @@ const selectorsAndFormClasses = {
   inputErrorClass: "form__field_type_error",
   errorClass: "form__field-error_active",
   inputError: ".form__field-error",
+  phoneInput: ".form__field-input-phone",
 };
 
 const config = {
-  // baseUrl: "http://accu-traffic.ca",
-  baseUrl: "",
+  baseUrl: "http://localhost:9090",
 };
+
+const popupOpenElement = ".popup_theme_main";
+const openPopupButton = document.querySelector(".popup_button");
 
 export {
   contactsFormElement,
   contactsForm,
   selectorsAndFormClasses,
   config,
+  popupOpenElement,
+  openPopupButton,
 };

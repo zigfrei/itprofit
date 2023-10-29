@@ -9,10 +9,15 @@ export default class FormHandler {
   //Get all input values from the form
   _getInputValues() {
     this._inputList = this.formElement.querySelectorAll(".form__field-input");
+    this._inputPhone = this.formElement.querySelector(
+      ".form__field-input-phone"
+    );
+
     this._formValues = {};
     this._inputList.forEach(
       (input) => (this._formValues[input.name] = input.value)
     );
+    this._formValues[phone.name] = this._inputPhone.value;
     return this._formValues;
   }
 

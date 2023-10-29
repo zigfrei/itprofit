@@ -1,77 +1,31 @@
 @import 'colors';
-@import 'swiper';
 @import '../styles/font-variables.scss';
-@import'../blocks/page/page.scss';
-@import '../blocks/header/header.scss';
-@import '../blocks/header/__button/header__button.scss';
 @import '../vendor/normalize.scss';
 
+@import'../blocks/page/page.scss';
+
+@import'../blocks/popup/popup.scss';
+@import'../blocks/popup/__close-button/popup__close-button.scss';
+@import'../blocks/popup/__container/popup__container.scss';
+@import'../blocks/popup/__title/popup__title.scss';
+@import'../blocks/popup/_opened/popup_opened.scss';
+
+@import '../blocks/header/header.scss';
+@import '../blocks/header/__button/header__button.scss';
+
 @import '../blocks/main/main.scss';
-@import '../blocks/logo/logo.scss';
-@import '../blocks/logo/__subtitle/logo__subtitle_azure.scss';
-@import '../blocks/logo/__subtitle/logo__subtitle_blue.scss';
-@import '../blocks/logo/__image/logo__image.scss';
-@import '../blocks/logo/__text/logo__text.scss';
-@import '../blocks/logo/__subtitle/logo__subtitle.scss';
-@import '../blocks/logo/__title/logo__title.scss';
-@import '../blocks/logo/__link/logo__link.scss';
-@import '../blocks/main-nav/main-nav.scss';
-@import '../blocks/main-nav/__item/main-nav__item.scss';
-@import '../blocks/main-nav/__list/main-nav__list.scss';
-@import '../blocks/main-nav/__link/main-nav__link.scss';
-@import '../blocks/main-nav/__link/main-nav__link_active.scss';
-@import '../blocks/intro/intro.scss';
-@import '../blocks/intro/__image/intro__image.scss';
-@import '../blocks/about-us/about-us.scss';
-@import '../blocks/about-us/__text/about-us__text.scss';
-@import '../blocks/about-us/__text/about-us__text_bold.scss';
-@import '../blocks/about-us/__title/about-us__title.scss';
-
-@import '../blocks/services/services.scss';
-@import '../blocks/services/__card/services__card.scss';
-@import '../blocks/services/__image/services__image.scss';
-@import '../blocks/services/__subtitle/services__subtitle.scss';
-@import '../blocks/services/__title/services__title.scss';
-@import '../blocks/services/__card-content/service__card-content.scss';
-@import '../blocks/services/__card-title/service__card-title.scss';
-@import '../blocks/services/__card-paragraf/services__card-paragraf.scss';
-@import '../blocks/services/__card-text/services__card-text.scss';
-
-@import '../blocks/partners/partners.scss';
-@import '../blocks/partners/__list/partners__list.scss';
-@import '../blocks/partners/__title/partners__title.scss';
-@import '../blocks/partners/__partner-logo/partners__partner-logo.scss';
-@import '../blocks/partners/__partner/partners__partner.scss';
-@import '../blocks/partners/__link/partners__link.scss';
 
 @import '../blocks/contacts/contacts.scss';
 @import '../blocks/contacts/__column/contacts__column.scss';
-@import '../blocks/contacts/__subtitle/contacts__subtitle.scss';
-@import '../blocks/contacts/__title/contacts__title.scss';
-@import '../blocks/contacts/__paragraf/contacts__paragraf.scss';
-@import '../blocks/contacts/__map/contacts__map.scss';
-@import '../blocks/contacts/__wrapper/contacts__wrapper.scss';
 @import '../blocks/contacts/__form/contacts__form.scss';
 
-@import '../blocks/address/address.scss';
-@import '../blocks/address/__title/address__title.scss';
-@import '../blocks/address/__text/address__text.scss';
-@import '../blocks/address/__text/_bold/address__text_bold.scss';
-@import '../blocks/address/__link/address__link.scss';
-@import '../blocks/address/__link/adress__link_nospam.scss';
-
 @import '../blocks/footer/footer.scss';
-@import '../blocks/footer/__logo/footer__logo.scss';
-@import '../blocks/footer/__text/footer__text.scss';
-
 
 @import '../blocks/form/__field-wrapper/form__field-wrapper.scss';
-@import '../blocks/form/__field/form__field_type_error.scss';
 @import '../blocks/form/__field-error/form__field-error.scss';
 @import '../blocks/form/__field-error/form__field-error_active.scss';
 @import '../blocks/form/__submit-button/form__submit-button.scss';
 @import '../blocks/form/__submit-button/form__submit-button_disabled.scss';
-@import '../blocks/form/__field-name/form__field-name.scss';
 
 @import '../blocks/form/form.scss';
 @import '../blocks/form/__field/form__field.scss';
@@ -79,10 +33,9 @@
 @import '../blocks/form/__placeholder-label/form__placeholder-label.scss';
 @import '../blocks/form/__placeholder-required/form__placeholder-required.scss';
 @import '../blocks/form/__field-input/form__field-input.scss';
+@import '../blocks/form/__field-input/form__field-input-phone.scss';
+@import '../blocks/form/__field/form__field_type_error.scss';
 @import '../blocks/form/__field-textarea/form__field-textarea.scss';
-@import '../blocks/form/__response/form__response.scss';
-@import '../blocks/form/__response/form__response_error.scss';
-@import '../blocks/form/__response/form__response_ok.scss';
 
 
 body,

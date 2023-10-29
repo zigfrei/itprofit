@@ -5,27 +5,23 @@ export default class FormApi{
   }
 
 //Checking the response from the server for correctness
-_checkResponse(res) {
+  async _checkResponse(res) {
   if (res.ok) {
-    return res.json();
+    return res.json()
   }
-  return Promise.reject(`Ошибка: ${res.status}`);
+  return Promise.reject(res);
 };
 
 //The function of sending form data to the server
-postFormData(formData, token) {
+postFormData(formData) {
   const data = new FormData()
-
   data.append('firstname', formData.first_name);
-  data.append('secondname', formData.second_name);
   data.append('email', formData.email);
   data.append('message', formData.message);
-  data.append('company', formData.company)
-  data.append('token', token)
-
-  return fetch(`${this._baseUrl}/send-mail`, {
+  data.append('phone', formData.phone)
+  return fetch(`${this._baseUrl}/api/registration`, {
     method: "POST",
-    body: data,
+    body: formData,
   }).then((res) => this._checkResponse(res));
 };
 

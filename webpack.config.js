@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const Dotenv = require('dotenv-webpack'); // webpack.config.js
 
 module.exports = {
   entry: { main: './src/pages/index.js' },
@@ -61,6 +60,5 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
-    new Dotenv(),
   ]
 }

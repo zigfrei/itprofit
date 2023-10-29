@@ -1,3 +1,5 @@
+import IMask from "imask";
+
 export default class FormValidator {
   constructor(selectors, elementForm) {
     (this.selectors = selectors), (this.elementForm = elementForm);
@@ -7,6 +9,11 @@ export default class FormValidator {
     this.inputs = Array.from(
       this.elementForm.querySelectorAll(this.selectors.inputSelector)
     );
+    this.phoneInput = this.elementForm.querySelector(this.selectors.phoneInput);
+    const maskOptions = {
+      mask: "+{7}(000)000-00-00",
+    };
+    this.phoneMask = new IMask(this.phoneInput, maskOptions);
   }
 
   _showInputError(input) {
@@ -15,6 +22,7 @@ export default class FormValidator {
     errorElement.textContent = input.validationMessage;
     errorElement.classList.add(this.selectors.errorClass);
   }
+
   _hideInputError(input) {
     const errorElement = this.elementForm.querySelector(`.${input.id}-error`);
     input.classList.remove(this.selectors.inputErrorClass);
@@ -50,11 +58,18 @@ export default class FormValidator {
     if (this._hasInvalidInput()) {
       this.disableSubmitButton();
     } else {
-      this._enableSubmitButton();
+      if (this.phoneMask.masked.isComplete) {
+        this._enableSubmitButton();
+      } else {
+        this.disableSubmitButton();
+      }
     }
   }
 
   _setEventListeners() {
+    this.phoneInput.addEventListener("input", () => {
+      this._phoneInputHandler();
+    });
     const inputList = this.inputs;
     this._toggleButtonState();
     inputList.forEach((inputElement) => {
@@ -63,6 +78,33 @@ export default class FormValidator {
         this._toggleButtonState();
       });
     });
+  }
+
+  _showInputPhoneError(input) {
+    const errorElement = this.elementForm.querySelector(`.${input.id}-error`);
+    input.classList.add(this.selectors.inputErrorClass);
+    errorElement.textContent = `Номер должен начинаться со знака "+" иметь 16 символов`;
+    errorElement.classList.add(this.selectors.errorClass);
+  }
+
+  _hideInputPhoneError(input) {
+    const errorElement = this.elementForm.querySelector(`.${input.id}-error`);
+    input.classList.remove(this.selectors.inputErrorClass);
+    errorElement.textContent = "";
+    errorElement.classList.remove(this.elementForm.errorClass);
+  }
+
+  _toggleInputPhoneError(input) {
+    if (this.phoneMask.masked.isComplete) {
+      this._hideInputPhoneError(input);
+    } else {
+      this._showInputPhoneError(input);
+    }
+  }
+
+  _phoneInputHandler() {
+    this._toggleButtonState();
+    this._toggleInputPhoneError(this.phoneInput);
   }
 
   enableValidation() {
