@@ -1,7 +1,7 @@
 {
-  "name": "accu-traffic",
+  "name": "itprofit",
   "version": "1.0.0",
-  "description": "SPA for accu-traffic.com",
+  "description": "Test for itprofit",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
